@@ -64,13 +64,7 @@ public void registraion() {
 	Select s =new Select(driver.findElement(By.xpath("//android.widget.CheckedTextView[@id = 'android:id/text1']")));
 	s.selectByVisibleText("Java");
 	System.out.println("User selects 'Java from dropdown");
-	/*
-	 driver.findElement(By.id("io.selendroid.testapp:id/input_adds"));
-	if ( !driver.findElement(By.id("selectCheckBox")).isSelected() )
-    {
-         driver.findElement(By.id("selectCheckBox")).click();
-    }
-    */
+	
 	driver.findElement(By.id("io.selendroid.testapp:id/btnRegisterUser")).click();
 	System.out.println("User click on register button");
 	
